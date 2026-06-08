@@ -4,6 +4,8 @@ import Posts from "./Posts"
 import Post from "./Post"
 import NotFound from "./NotFound"
 import Navbar from "./Navbar"
+import Products from "./Products"
+import Product from "./Product"
 function App() {
 
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Posts />} />
         <Route path="/posts/:id" element={<Post />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} />
         <Route path="*" element={<NotFound />} />
 
       </Routes>
