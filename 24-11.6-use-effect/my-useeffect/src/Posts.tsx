@@ -7,7 +7,6 @@ export default function Posts() {
   const [count, setCount] = useState(0)
 
   async function fetchPosts(){
-    setLoading(true)
     try{
         await new Promise((resolve) => setTimeout(resolve, 3000));
 
@@ -31,7 +30,7 @@ export default function Posts() {
         fetchPosts()
     }, [count])
 
-    
+
     let postList = posts.map((post:any)=>{
         return <li key={post.id}>{post.title}</li>
     })
