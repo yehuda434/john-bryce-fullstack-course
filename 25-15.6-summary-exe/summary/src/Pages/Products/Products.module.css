@@ -1,0 +1,22 @@
+/* src/pages/Products/Products.module.css */
+
+.page {
+    padding: 40px;
+    background: #f8fafc;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .page h1 {
+    margin-bottom: 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 80px;
+  }

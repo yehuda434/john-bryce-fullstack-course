@@ -5,6 +5,7 @@ import ProductDetails from './Pages/ProductDetails/ProductDetails'
 import Favorites from './Pages/Favorites/Favorites'
 import Navbar from './Components/Navbar/Navbar'
 import NotFound from './NotFound/NotFound'
+import { products } from './data/products'
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/products/:productId" element={<ProductDetails />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
